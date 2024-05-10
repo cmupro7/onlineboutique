@@ -1,4 +1,5 @@
 def paymentservicePipeline(){
+  echo "Executing paymentservicePipeline() method..."
 
 // activities for paymentservice microservices starts
 
