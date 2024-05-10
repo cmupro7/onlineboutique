@@ -1,10 +1,12 @@
 def paymentservicePipeline() {
-    stages {
-        stage('paymentservice') {
-            echo "Executing paymentservicePipeline() method..."
+        stage('Hello Paymentservice') {
             steps {
                 echo "Step: Executing paymentservicePipeline() method..."
             }
         } // stage
-    } // Stages
+       
+        stage('Deploy Paymentservice') {
+            echo "deployment Paymentservice steps"
+          }
+          // ... add other stages as needed
 } // def activities for paymentservice microservices ends.
