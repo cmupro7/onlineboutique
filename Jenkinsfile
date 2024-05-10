@@ -139,16 +139,18 @@ pipeline {
     }
 }
 
-        stage('paymentservice') {
-                            steps {
-                                dir('onlineboutique') {
-                                script {
-                                    load 'paymentservice-08_pipeline.groovy'
-                                    paymentservicePipeline()
-                                }
-                            }
+        stage('paymentservice-08_pipeline.groovy') {
+                    steps {
+                        dir('onlineboutique') {
+                        script {
+                            echo "Loading paymentservice-08_pipeline.groovy file..."
+                            load 'paymentservice-08_pipeline.groovy'
+                            echo "Executing paymentservicePipeline() method..."
+                            paymentservicePipeline()
                         }
+                    }
                 }
+        }
 
 
 // More stages here ... 
