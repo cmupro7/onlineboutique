@@ -1,4 +1,4 @@
-def call(){
+def paymentservicePipeline(){
 
 // activities for paymentservice microservices starts
 
