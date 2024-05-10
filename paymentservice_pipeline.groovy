@@ -1,10 +1,10 @@
-def paymentservicePipeline(){
-   stages {
+def paymentservicePipeline() {
+    stages {
         stage('paymentservice') {
-          echo "Executing paymentservicePipeline() method..."
+            echo "Executing paymentservicePipeline() method..."
             steps {
-                echo "Step: Executing paymentservicePipeline() method..."'
+                echo "Step: Executing paymentservicePipeline() method..."
             }
-        }//stage
-    } //Stages 
-}// def activities for paymentservice microservices ends. paymentservice_pipeline.groovy
+        } // stage
+    } // Stages
+} // def activities for paymentservice microservices ends.
